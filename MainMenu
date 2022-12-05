@@ -1,5 +1,7 @@
-import javax.swing.*;
+        import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class MainMenu extends JFrame {
 
@@ -26,11 +28,15 @@ public class MainMenu extends JFrame {
         // Create buttons for the main menu options
         JButton option1Button = new JButton("Start");
 
+        //add an action listener to the button
+        option1Button.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+            }
+        });
 
         // Add the label and buttons to the panel
         panel.add(label);
         panel.add(option1Button);
-
 
 
         // Add the panel to the frame
@@ -38,5 +44,8 @@ public class MainMenu extends JFrame {
 
         // Show the frame
         setVisible(true);
-        }
     }
+
+}
+
+   
